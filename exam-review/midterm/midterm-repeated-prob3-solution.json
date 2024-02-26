@@ -1,0 +1,6 @@
+[
+	{
+		"question": "Solution Code with comments:",
+		"code": "iterator = 1 # Should start at 1 and not 0\n\ntotal = 0\n\nwhile iterator <= 100: # Goes to 100 inclusive\n\n\t # Should be multiple of 2 AND 5, not OR 5\n\n\tif iterator % 2 == 0 and iterator % 5 == 0:\n\n\t\t# Adding iterator counts current val\n\n\t\ttotal += iterator\n\n\titerator += 1\n\nprint(total)\n",
+    }
+]

@@ -1,0 +1,274 @@
+[
+    {
+        "question": "Problem 1a - Using the table above, select the output for colors[0] for colors = ['red', 'green', 'blue', 'yellow']",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "yellow",
+                "correct": false,
+            },
+            {
+                "answer": "red",
+                "correct": true,
+            },
+            {
+                "answer": "Error message: IndexError: list index out of range",
+                "correct": false,
+            },
+            {
+                "answer": "green",
+                "correct": false,
+            },
+            {
+                "answer": "blue",
+                "correct": false,
+            }
+        ]
+    },
+    {
+        "question": "Problem 1b - Using the table above, select the output for colors[2] for colors = ['red', 'green', 'blue', 'yellow']",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "yellow",
+                "correct": false,
+            },
+            {
+                "answer": "red",
+                "correct": false,
+            },
+            {
+                "answer": "Error message: IndexError: list index out of range",
+                "correct": false,
+            },
+            {
+                "answer": "green",
+                "correct": false,
+            },
+            {
+                "answer": "blue",
+                "correct": true,
+            }
+        ]
+    },
+    {
+        "question": "Problem 1c - Using the table above, select the output for colors[-1] for colors = ['red', 'green', 'blue', 'yellow']",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "yellow",
+                "correct": true,
+            },
+            {
+                "answer": "red",
+                "correct": false,
+            },
+            {
+                "answer": "Error message: IndexError: list index out of range",
+                "correct": false,
+            },
+            {
+                "answer": "green",
+                "correct": false,
+            },
+            {
+                "answer": "blue",
+                "correct": false,
+            }
+        ]
+    },
+    {
+        "question": "Problem 1d - Using the table above, select the output for colors[-3] for colors = ['red', 'green', 'blue', 'yellow']",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "yellow",
+                "correct": false,
+            },
+            {
+                "answer": "red",
+                "correct": false,
+            },
+            {
+                "answer": "Error message: IndexError: list index out of range",
+                "correct": false,
+            },
+            {
+                "answer": "green",
+                "correct": true,
+            },
+            {
+                "answer": "blue",
+                "correct": false,
+            }
+        ]
+    },
+    {
+        "question": "Problem 1e - Using the table above, select the output for colors[4] for colors = ['red', 'green', 'blue', 'yellow']",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "yellow",
+                "correct": false,
+            },
+            {
+                "answer": "red",
+                "correct": false,
+            },
+            {
+                "answer": "Error message: IndexError: list index out of range",
+                "correct": true,
+            },
+            {
+                "answer": "green",
+                "correct": false,
+            },
+            {
+                "answer": "blue",
+                "correct": false,
+            }
+        ]
+    },
+    {
+        "question": "Problem 2a - For the code segment colors = ['red', 'green', 'blue', 'yellow'], select the output of colors[2:]",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "['blue', 'yellow']",
+                "correct": true,
+            },
+            {
+                "answer": "['red', 'green']",
+                "correct": false,
+            },
+            {
+                "answer": "['green']",
+                "correct": false,
+            },
+            {
+                "answer": "['red', 'green', 'blue', 'yellow']",
+                "correct": false,
+            }
+        ]
+    },
+    {
+        "question": "Problem 2b - For the code segment colors = ['red', 'green', 'blue', 'yellow'], select the output of colors[:2]",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "['blue', 'yellow']",
+                "correct": false,
+            },
+            {
+                "answer": "['red', 'green']",
+                "correct": true,
+            },
+            {
+                "answer": "['green']",
+                "correct": false,
+            },
+            {
+                "answer": "['red', 'green', 'blue', 'yellow']",
+                "correct": false,
+            }
+        ]
+    },
+	{
+        "question": "Problem 2c - For the code segment colors = ['red', 'green', 'blue', 'yellow'], select the output of colors[1:2]",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "['blue', 'yellow']",
+                "correct": false,
+            },
+            {
+                "answer": "['red', 'green']",
+                "correct": false,
+            },
+            {
+                "answer": "['green']",
+                "correct": true,
+            },
+            {
+                "answer": "['red', 'green', 'blue', 'yellow']",
+                "correct": false,
+            }
+        ]
+    },
+	{
+        "question": "Problem 2d - For the code segment colors = ['red', 'green', 'blue', 'yellow'], select the output of colors[:]",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "['blue', 'yellow']",
+                "correct": false,
+            },
+            {
+                "answer": "['red', 'green']",
+                "correct": false,
+            },
+            {
+                "answer": "['green']",
+                "correct": false,
+            },
+            {
+                "answer": "['red', 'green', 'blue', 'yellow']",
+                "correct": true,
+            }
+        ]
+    },
+    {
+        "question": "Problem 3 - For the code segment colors = ['red', 'green', 'blue', 'yellow'], select the output:",
+		"code":"sorted( colors[:2] )",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "['blue', 'yellow']",
+                "correct": true,
+				"feedback": "Will sort everything from 2 on, and then return",
+            },
+            {
+                "answer": "['red', 'yellow']",
+                "correct": false,
+				"feedback": "Will sort everything from 2 on, and then return",
+            },
+            {
+                "answer": "['green', 'red']",
+                "correct": false,
+				"feedback": "Will sort everything from 2 on, and then return",
+            },
+            {
+                "answer": "['blue', 'green']",
+                "correct": false,
+				"feedback": "Will sort everything from 2 on, and then return",
+            }
+        ]
+    },
+    {
+        "question": "Problem 4 - For the code segment colors = ['red', 'green', 'blue', 'yellow'], select the output:",
+		"code":"sorted( colors[2:] )",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "['blue', 'yellow']",
+                "correct": false,
+				"feedback": "Will sort everything before 2, and then return",
+            },
+            {
+                "answer": "['red', 'yellow']",
+                "correct": false,
+				"feedback": "Will sort everything before 2, and then return",
+            },
+            {
+                "answer": "['green', 'red']",
+                "correct": true,
+				"feedback": "Will sort everything before 2, and then return",
+            },
+            {
+                "answer": "['blue', 'green']",
+                "correct": false,
+				"feedback": "Will sort everything before 2, and then return",
+            }
+        ]
+    },
+]

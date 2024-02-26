@@ -1,0 +1,125 @@
+[
+    {
+		"question": "Given the following code segment, select the run time complexity: (Note: code is available in a block below if your code overruns a line on your screen)",
+        "code": "#Inputs: list and number\ndef contains( numbers_list, target_value ):\n\tfor number in numbers_list:\n\t\tif number = target_value:\n\t\t\treturn True\n\t\n\treturn False\n",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "O(n)",
+                "correct": true,
+            },
+            {
+                "answer": "O(n^2)",
+                "correct": false,
+            },
+            {
+                "answer": "O( lg(n) )",
+                "correct": false,
+            },
+            {
+                "answer": "O( n*lg(n) )",
+                "correct": false,
+            }
+        ]
+    },
+    {
+		"question": "Given the following code segment, select the run time complexity: (Note: code is available in a block below if your code overruns a line on your screen)",
+        "code": "#Inputs: sorted list and number\ndef search( numbers_list, target_value ):\n\t\n\tmin_val = 0\n\tmax_val = len(numbers_list) - 1\n\t\n\twhile min_val <= max_val:\n\t\t\n\t\tmid_val = ( max_val + min_val ) // 2\n\t\n\t\tif numbers_list[ mid_val ] == target_value:\n\t\t\treturn True\n\t\t\n\t\tif numbers_list[ mid_val ] > target_value:\n\t\t\tmax_val = mid_val - 1\n\t\t\t\n\t\telif numbers_list[ mid_val ] < target_value:\n\t\t\tmin_val = mid_val + 1\n\t\t\t\n\treturn False\n",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "O(n)",
+                "correct": false,
+            },
+            {
+                "answer": "O(n^2)",
+                "correct": false,
+            },
+            {
+                "answer": "O( lg(n) )",
+                "correct": true,
+            },
+            {
+                "answer": "O( n*lg(n) )",
+                "correct": false,
+            }
+        ]
+    },
+    {
+		"question": "Given the following code segment, select the run time complexity: (Note: code is available in a block below if your code overruns a line on your screen)",
+        "code": "#Inputs: unsorted list\ndef sort( numbers_list ):\n\t\n\titerator_1 = 0\n\twhile iterator_1 < len(numbers_list) - 1:\n\t\t\n\t\titerator_2 = iterator_1 + 1\n\t\tindex = iterator_1 + 1\n\t\t\n\t\twhile iterator_2 < len(numbers_list):\n\t\t\t\n\t\t\tif numbers_list[index] > numbers_list[ iterator_2 ]:\n\t\t\t\tindex = iterator_2\n\t\t\t\t\n\t\t\titerator_2 += 1\n\t\t\t\n\t\ttemp = numbers_list[index]\n\t\tnumbers_list[index] = numbers_list[iterator_1]\n\t\tnumbers_list[iterator_1] = temp\n\t\t\n\t\titerator_1 += 1\n\t\t\n\treturn numbers_list\n",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "O(n)",
+                "correct": false,
+            },
+            {
+                "answer": "O(n^2)",
+                "correct": true,
+            },
+            {
+                "answer": "O( lg(n) )",
+                "correct": false,
+            },
+            {
+                "answer": "O( n*lg(n) )",
+                "correct": false,
+            }
+        ]
+    },
+    {
+		"question": "Given the following code segment, select the output: (Note: code is available in a block below if your code overruns a line on your screen)",
+        "code": "def prob_3( int_val ):\n\t\n\tif int_val <= 1:\n\t\treturn 2\n\t\n\tif int_val % 2 == 1:\n\t\treturn int_val + prob_3( int_val - 2 )\n\t\n\telse:\n\t\treturn int_val + prob_3( int_val - 1 )\n\t\n\nprob_3( 8 )\n",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "25",
+                "correct": true,
+            },
+            {
+                "answer": "37",
+                "correct": false,
+            },
+            {
+                "answer": "22",
+                "correct": false,
+            },
+            {
+                "answer": "24",
+                "correct": false,
+            },
+            {
+                "answer": "36",
+                "correct": false,
+            }
+        ]
+    },
+    {
+		"question": "Given the following code segment, select the output: (Note: code is available in a block below if your code overruns a line on your screen)",
+        "code": "def prob_4( x ):\n\t\n\tif x <= 3:\n\t\treturn 2\n\t\n\treturn prob_4( x - 2 ) + prob_4( x - 3 )\n\nprob_4(6)\n",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "6",
+                "correct": true,
+            },
+            {
+                "answer": "8",
+                "correct": false,
+            },
+            {
+                "answer": "5",
+                "correct": false,
+            },
+            {
+                "answer": "18",
+                "correct": false,
+            },
+            {
+                "answer": "16",
+                "correct": false,
+            }
+        ]
+    },
+]

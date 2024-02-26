@@ -1,0 +1,314 @@
+[
+    {
+        "question": "Problem 1 - Which of the following statements are true?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Images can be represented by a grid of pixels, where each pixel element consists of red, green, and blue values.",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "Conversion from analog to digital is usually perfect and high fidelity.",
+                "correct": false,
+                "feedback": "Digital requires hitting specific noise margins, which usually reduces fidelity."
+            },
+            {
+                "answer": "Individual characters in text are actually numbers that follow a convention such as ASCII or Unicode",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "Digital systems deal with discrete values (meaning there are only a fixed number of possible values).",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "Analog information is usually easier to interpret, store, transported, and processed than digital information.",
+                "correct": false,
+                "feedback": "Since analog can be more varied, and require more precise information storage, it is more difficult."
+            }
+        ]
+    },
+    {
+        "question": "Problem 2 - Which of the following statements about files are true?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Absolute paths always begin with the program's current working directory.",
+                "correct": false,
+                "feedback": "Absolute paths start at the top of the file hierarchy."
+            },
+            {
+                "answer": "Windows and macOS use the same separators between folder names.",
+                "correct": false,
+                "feedback": "The separators are different between different operating systems"
+            },
+            {
+                "answer": "Relative paths are always based on the program's current working directory.",
+                "correct": true,
+                "feedback": "'Relative' to your current location."
+            },
+            {
+                "answer": "The path of a file specifies its location on the computer.",
+                "correct": true,
+            },
+        ]
+    },
+    {
+        "question": "Problem 3a - Which of the following is the definition of Device Driver?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Acts as a bridge to a specific hardware device..",
+                "correct": true,
+            },
+            {
+                "answer": "Manages the hardware of a computer and makes it possible to run other programs.",
+                "correct": false,
+            },
+            {
+                "answer": "Self-contained program focused on a single task.",
+                "correct": false,
+            },
+        ]
+    },
+    {
+        "question": "Problem 3b - Which of the following is the definition of Operating System?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Acts as a bridge to a specific hardware device..",
+                "correct": false,
+            },
+            {
+                "answer": "Manages the hardware of a computer and makes it possible to run other programs.",
+                "correct": true,
+            },
+            {
+                "answer": "Self-contained program focused on a single task.",
+                "correct": false,
+            },
+        ]
+    },
+    {
+        "question": "Problem 3c - Which of the following is the definition of application?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Acts as a bridge to a specific hardware device..",
+                "correct": false,
+            },
+            {
+                "answer": "Manages the hardware of a computer and makes it possible to run other programs.",
+                "correct": false,
+            },
+            {
+                "answer": "Self-contained program focused on a single task.",
+                "correct": true,
+            },
+        ]
+    },
+    {
+        "question": "Problem 4a - Using the table above, enter the number of the definition for 'Turing Machine'",
+        "type": "numeric",
+        "answers": [
+            {
+                "type": "value",
+                "value": 2,
+                "correct": true,
+                "feedback": "Correct. An idealized machine that serves as a universal model of computation."
+            },
+            {
+                "type": "default",
+                "feedback": "Incorrect. Try again."
+            }
+        ]
+    },
+    {
+        "question": "Problem 4b - Using the table above, enter the number of the definition for 'Distributed Computing'",
+        "type": "numeric",
+        "answers": [
+            {
+                "type": "value",
+                "value": 4,
+                "correct": true,
+                "feedback": "Correct. A system where a group of independent computers communicate to solve problems."
+            },
+            {
+                "type": "default",
+                "feedback": "Incorrect. Try again."
+            }
+        ]
+    },
+    {
+        "question": "Problem 4c - Using the table above, enter the number of the definition for 'Super Computer'",
+        "type": "numeric",
+        "answers": [
+            {
+                "type": "value",
+                "value": 1,
+                "correct": true,
+                "feedback": "Correct. A large computer with a number of processors and lots of memory."
+            },
+            {
+                "type": "default",
+                "feedback": "Incorrect. Try again."
+            }
+        ]
+    },
+    {
+        "question": "Problem 4d - Using the table above, enter the number of the definition for 'GPU'",
+        "type": "numeric",
+        "answers": [
+            {
+                "type": "value",
+                "value": 3,
+                "correct": true,
+                "feedback": "Correct. A specialized processor that perform graphics computations much faster than conventional CPUs."
+            },
+            {
+                "type": "default",
+                "feedback": "Incorrect. Try again."
+            }
+        ]
+    },
+    {
+        "question": "Problem 5 - Which of the following statements about operating systems are true?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "An OS must manage a systems CPU by scheduling and coordinating which programs run.",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "An OS organizes the information stored on a disk via a file system interface.",
+                "correct": true,
+            },
+            {
+                "answer": "An OS typically allows each application to mange RAM directly.",
+                "correct": false,
+            },
+            {
+                "answer": "Embedded operating systems run on devices usually considered general purpose computers ",
+                "correct": false,
+                "feedback": "Embedded operating systems run on devices usually *not* considered general purpose computers."
+            },
+            {
+                "answer": "Real-time operating systems provide absolute guarantees that a certain action will occur by a certain time",
+                "correct": true,
+            }
+        ]
+    },
+    {
+        "question": "Problem 6 - Which of the following statements about images are true?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Computers typically use an subtractive color model to display colors on screens.",
+                "correct": false,
+				"feedback": "RGB is an *additive* color model."
+            },
+            {
+                "answer": "Programs often represent colors in an image as RGBA values.",
+                "correct": true,
+            },
+            {
+                "answer": "Typically, the y coordinates of an image increase upwards from the bottom.",
+                "correct": false,
+                "feedback": "Typically, the y coordinates of an image increase from the top down to the bottom."
+
+            },
+            {
+                "answer": "Each color component has a maximum value of 255.",
+                "correct": true,
+                "feedback": "Embedded operating systems run on devices usually *not* considered general purpose computers."
+            },
+            {
+                "answer": "Each image pixel has an x and y coordinate along with a color value.",
+                "correct": true,
+            }
+        ]
+    },
+    {
+        "question": "Problem 7a - Using the table above, enter the number of the definition for 'Library'",
+        "type": "numeric",
+        "answers": [
+            {
+                "type": "value",
+                "value": 2,
+                "correct": true,
+                "feedback": "Correct. A collection of related functions."
+            },
+            {
+                "type": "default",
+                "feedback": "Incorrect. Try again."
+            }
+        ]
+    },
+    {
+        "question": "Problem 7b - Using the table above, enter the number of the definition for 'SDK'",
+        "type": "numeric",
+        "answers": [
+            {
+                "type": "value",
+                "value": 4,
+                "correct": true,
+                "feedback": "Correct.  An environment and supporting tools for a particular platform."
+            },
+            {
+                "type": "default",
+                "feedback": "Incorrect. Try again."
+            }
+        ]
+    },
+    {
+        "question": "Problem 7c - Using the table above, enter the number of the definition for 'Bug'",
+        "type": "numeric",
+        "answers": [
+            {
+                "type": "value",
+                "value": 5,
+                "correct": true,
+                "feedback": "Correct.  Flaw in a piece of software."
+            },
+            {
+                "type": "default",
+                "feedback": "Incorrect. Try again."
+            }
+        ]
+    },
+    {
+        "question": "Problem 7d - Using the table above, enter the number of the definition for 'API'",
+        "type": "numeric",
+        "answers": [
+            {
+                "type": "value",
+                "value": 1,
+                "correct": true,
+                "feedback": "Correct.  Description of what services a system provides."
+            },
+            {
+                "type": "default",
+                "feedback": "Incorrect. Try again."
+            }
+        ]
+    },
+    {
+        "question": "Problem 7e - Using the table above, enter the number of the definition for 'Assembler'",
+        "type": "numeric",
+        "answers": [
+            {
+                "type": "value",
+                "value": 6,
+                "correct": true,
+                "feedback": "Correct.  Translates low-level code to machine code."
+            },
+            {
+                "type": "default",
+                "feedback": "Incorrect. Try again."
+            }
+        ]
+    },
+]

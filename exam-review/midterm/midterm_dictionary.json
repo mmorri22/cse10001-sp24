@@ -1,0 +1,177 @@
+[
+    {
+        "question": "Which of the following statements about dictionaries are true??",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Unlike a list, a dictionary can use many different data types as its index.",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "Unlike a list, a dictionary cannot be updated once it has been declared.",
+                "correct": false,
+                "feedback": "Dictionaries can be updated, just like lists."
+            },
+            {
+                "answer": "Like a list, a dictionary is a collection of many values.",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "Like a list, a dictionary can be sliced.",
+                "correct": false,
+                "feedback": "dictionaries canno be sliced since their ordering is based on the key-value pair, not the index."
+            },
+        ]
+    },
+	{
+		"question": "Given the following code segment, select the output for TABLE.keys()",
+		"code": "TABLE = {\n\t'harry' : 'potter',\n\t'ron' : 'weasley',\n\t'hermonie' : 'granger',\n\t'draco' : 'malfoy'\n}\n",
+		"type": "many_choice",
+        "answers": [
+            {
+                "code": "['harry', 'ron', 'hermonie', 'draco']",
+                "correct": true,
+            },
+            {
+                "code": "['potter', 'weasley', 'granger', 'malfoy']",
+                "correct": false,
+            },
+            {
+                "code": "[('harry', 'potter'), ('ron', 'weasley'), ('hermonie', 'granger'), ('draco', 'malfoy')]",
+                "correct": false,
+            },
+        ]
+    },
+	{
+		"question": "Given the following code segment, select the output for TABLE.values()",
+		"code": "TABLE = {\n\t'harry' : 'potter',\n\t'ron' : 'weasley',\n\t'hermonie' : 'granger',\n\t'draco' : 'malfoy'\n}\n",
+		"type": "many_choice",
+        "answers": [
+            {
+                "code": "['harry', 'ron', 'hermonie', 'draco']",
+                "correct": false,
+            },
+            {
+                "code": "['potter', 'weasley', 'granger', 'malfoy']",
+                "correct": true,
+            },
+            {
+                "code": "[('harry', 'potter'), ('ron', 'weasley'), ('hermonie', 'granger'), ('draco', 'malfoy')]",
+                "correct": false,
+            },
+        ]
+    },
+	{
+		"question": "Given the following code segment, select the output for TABLE.items()",
+		"code": "TABLE = {\n\t'harry' : 'potter',\n\t'ron' : 'weasley',\n\t'hermonie' : 'granger',\n\t'draco' : 'malfoy'\n}\n",
+		"type": "many_choice",
+        "answers": [
+            {
+                "code": "['harry', 'ron', 'hermonie', 'draco']",
+                "correct": false,
+            },
+            {
+                "code": "['potter', 'weasley', 'granger', 'malfoy']",
+                "correct": false,
+            },
+            {
+                "code": "[('harry', 'potter'), ('ron', 'weasley'), ('hermonie', 'granger'), ('draco', 'malfoy')]",
+                "correct": true,
+            },
+        ]
+    },
+	{
+		"question": "Given the following code segment, select the output for counts['a']",
+		"code": "name = 'Harry Potter and the Goblet of Fire'\n\ncounts = {}\n\nfor letter in name:\n\tcounts[letter] = counts.get(letter,0) + 1\n",
+		"type": "many_choice",
+        "answers": [
+            {
+                "code": "2",
+                "correct": true,
+            },
+            {
+                "code": "3",
+                "correct": false,
+            },
+            {
+                "code": "4",
+                "correct": false,
+            },
+            {
+                "code": "6",
+                "correct": false,
+            },
+        ]
+    },
+	{
+		"question": "Given the following code segment, select the output for counts['o']",
+		"code": "name = 'Harry Potter and the Goblet of Fire'\n\ncounts = {}\n\nfor letter in name:\n\tcounts[letter] = counts.get(letter,0) + 1\n",
+		"type": "many_choice",
+        "answers": [
+            {
+                "code": "2",
+                "correct": false,
+            },
+            {
+                "code": "3",
+                "correct": true,
+            },
+            {
+                "code": "4",
+                "correct": false,
+            },
+            {
+                "code": "6",
+                "correct": false,
+            },
+        ]
+    },
+	{
+		"question": "Given the following code segment, select the output for counts['t']",
+		"code": "name = 'Harry Potter and the Goblet of Fire'\n\ncounts = {}\n\nfor letter in name:\n\tcounts[letter] = counts.get(letter,0) + 1\n",
+		"type": "many_choice",
+        "answers": [
+            {
+                "code": "2",
+                "correct": false,
+            },
+            {
+                "code": "3",
+                "correct": false,
+            },
+            {
+                "code": "4",
+                "correct": true,
+            },
+            {
+                "code": "6",
+                "correct": false,
+            },
+        ]
+    },
+	{
+		"question": "Given the following code segment, select the output for max(counts.values())",
+		"code": "name = 'Harry Potter and the Goblet of Fire'\n\ncounts = {}\n\nfor letter in name:\n\tcounts[letter] = counts.get(letter,0) + 1\n",
+		"type": "many_choice",
+        "answers": [
+            {
+                "code": "2",
+                "correct": false,
+            },
+            {
+                "code": "3",
+                "correct": false,
+            },
+            {
+                "code": "4",
+                "correct": false,
+            },
+            {
+                "code": "6",
+                "correct": true,
+            },
+        ]
+    },
+]

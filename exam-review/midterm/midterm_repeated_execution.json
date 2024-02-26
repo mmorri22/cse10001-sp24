@@ -1,0 +1,88 @@
+[
+	{
+		"question": "Which of the following statements about loops are true?",
+		"type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "For loops are preferred when we have a sequence of items to loop through.",
+                "correct": true,
+            },
+            {
+                "answer": "While loops are preferred when we have one or more conditions to check.",
+                "correct": true,
+            },
+            {
+                "answer": "While loops are generally more powerful than for loops.",
+                "correct": false,
+				"feedback": "For loops are generally more powerful because sequences are more commonly used in algorithms."
+            },
+        ]
+    },
+	{
+		"question": "Determine the output of the following Python code:",
+		"code": "index = 1\ncount = 0\nwhile index <= 20:\n\tif index % 3 == 0:\n\t\tcount += 1\n\tindex += 1\n\nprint(count)\n",
+		"type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "4",
+                "correct": false,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "6",
+                "correct": true,
+            },
+            {
+                "answer": "5",
+                "correct": false,
+            },
+            {
+                "answer": "7",
+                "correct": false,
+            },
+            {
+                "answer": "3",
+                "correct": false,
+            }
+        ]
+    },
+	{
+		"question": "Select the changes necessary to make this code count the values between 1 and 100 (inclusive) that are a multiple of 2 as well as a multiple of 5",
+		"code": "iterator = 0\ntotal = 0\nwhile iterator < 100:\n\tif iterator % 2 == 0 or iterator % 5 == 0:\n\t\ttotal += 1\n\titerator += 1\n",
+		"type": "many_choice",
+        "answers": [
+            {
+                "code": "iterator = 1",
+                "correct": true,
+                "feedback": "Should start at 1."
+            },
+            {
+                "code": "total = 1",
+                "correct": false,
+            },
+            {
+                "code": "while iterator <= 100",
+                "correct": true,
+				"feedback": "Makes this inclusive of 100."
+            },
+            {
+                "code": "iterator / 2 == 0 or iterator / 5",
+                "correct": false,
+            },
+            {
+                "code": "iterator // 2 == 0 or iterator // 5",
+                "correct": false,
+            },
+            {
+                "code": "iterator % 2 == 0 and iterator % 5",
+                "correct": true,
+				"feedback": "2 as well as 5"
+            },
+            {
+                "code": "total += iterator",
+                "correct": true,
+				"feedback": "Counts the value"
+            }
+        ]
+    }
+]

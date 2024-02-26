@@ -1,0 +1,60 @@
+[
+    {
+        "question": "Problem 1 - Which of the following statements are true?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "CPUs usually include a cache or small, very fast memory used to store recently used information.",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "When comparing CPUs, speed is always the most important factor to consider.",
+                "correct": false,
+                "feedback": "We must consider factors like power consumption and memory consumption as well."
+            },
+            {
+                "answer": "Branch instructions such as GOTO allow the CPU move data into new registers",
+                "correct": false,
+                "feedback": "Branch instructions are if, elif, while, and for, which dictate excution order, but not storing data."
+            },
+            {
+                "answer": "Pipelining is a technique where the CPU overlaps fetching and executing instructions.",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "Program instructions are stored as binary numbers in RAM.",
+                "correct": true,
+                "feedback": "Correct."
+            }
+        ]
+    },
+    {
+        "question": "Problem 2 - Which of the following hardware components stores data in active use by the CPU?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "RAM",
+                "correct": true,
+            },
+            {
+                "answer": "Monitor",
+                "correct": false,
+            },
+            {
+                "answer": "Keyboard",
+                "correct": false,
+            },
+            {
+                "answer": "ROM",
+                "correct": false,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "Disk",
+                "correct": false,
+            }
+        ]
+    },
+]

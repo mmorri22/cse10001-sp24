@@ -1,0 +1,224 @@
+[
+    {
+        "question": "How many bits are in a byte?",
+        "type": "numeric",
+        "answers": [
+            {
+                "type": "value",
+                "value": 8,
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "type": "default",
+                "feedback": "Incorrect. Please review the process of converting integers to binary."
+            }
+        ]
+    },
+    {
+        "question": "How many possible values are there in a 4-bit binary number?",
+        "type": "numeric",
+        "answers": [
+            {
+                "type": "value",
+                "value": 16,
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "type": "default",
+                "feedback": "Incorrect. Please review the process of converting integers to binary."
+            }
+        ]
+    },
+    {
+        "question": "How many bytes are in a kilobyte?",
+        "type": "numeric",
+        "answers": [
+            {
+                "type": "value",
+                "value": 1024,
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "type": "default",
+                "feedback": "Incorrect. Please review the process of converting integers to binary."
+            }
+        ]
+    },
+    {
+        "question": "How many values can a bit represent?",
+        "type": "numeric",
+        "answers": [
+            {
+                "type": "value",
+                "value": 2,
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "type": "default",
+                "feedback": "Incorrect. Please review the process of converting integers to binary."
+            }
+        ]
+    },
+    {
+        "question": "What is the binary representation of 25?",
+        "type": "numeric",
+        "answers": [
+            {
+                "type": "value",
+                "value": 11001,
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "type": "default",
+                "feedback": "Incorrect. Please review the process of converting integers to binary."
+            }
+        ]
+    },
+    {
+        "question": "What is the binary representation of 85?",
+        "type": "numeric",
+        "answers": [
+            {
+                "type": "value",
+                "value": 1010101,
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "type": "default",
+                "feedback": "Incorrect. Please review the process of converting integers to binary."
+            }
+        ]
+    },
+    {
+        "question": "What is the integer representation of 110101 (from binary)?",
+        "type": "numeric",
+        "answers": [
+            {
+                "type": "value",
+                "value": 53,
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "type": "default",
+                "feedback": "Incorrect. Please review the process of converting binary to integers."
+            }
+        ]
+    },
+    {
+        "question": "What is the integer representation of 1001111 (from binary)?",
+        "type": "numeric",
+        "answers": [
+            {
+                "type": "value",
+                "value": 79,
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "type": "default",
+                "feedback": "Incorrect. Please review the process of converting binary to integers."
+            }
+        ]
+    },
+    {
+        "question": "What is the integer representation of 0x4d in hexademical?",
+        "type": "numeric",
+        "answers": [
+            {
+                "type": "value",
+                "value": 77,
+                "correct": true,
+                "feedback": "Correct: 4*16^1 + 13"
+            },
+            {
+                "type": "default",
+                "feedback": "Incorrect. Please review the process of converting integers to hexademical. Also, check to make sure you put 0x to srat"
+            }
+        ]
+    },
+    {
+        "question": "What is the integer representation of 0x3c5 in hexademical?",
+        "type": "numeric",
+        "answers": [
+            {
+                "type": "value",
+                "value": 965,
+                "correct": true,
+                "feedback": "Correct: 3*16^2 + 12*16^1 + 5."
+            },
+            {
+                "type": "default",
+                "feedback": "Incorrect. Please review the process of converting integers to hexademical. Also, check to make sure you put 0x to srat"
+            }
+        ]
+    },
+    {
+        "question": "What is the hexademical value of 431?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "0x13a",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+            {
+                "answer": "0x2bd",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+            {
+                "answer": "0x1af",
+                "correct": true,
+                "feedback": "Correct: 431 - 1*16^2 = 175, 175 - 10*16^1 = 15, 15 - 15*16^0 = 0"
+            },
+            {
+                "answer": "0x1fc",
+                "correct": false,
+                "feedback": "Incorrect."
+            },
+            {
+                "answer": "0xde",
+                "correct": false,
+                "feedback": "Incorrect."
+            }
+        ]
+    },
+    {
+        "question": "Which of the following statements are true?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Images can be represented by a grid of pixels, where each pixel element consists of red, green, and blue values.",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "Conversion from analog to digital is usually perfect and high fidelity.",
+                "correct": false,
+                "feedback": "Digital requires hitting specific noise margins, which usually reduces fidelity."
+            },
+            {
+                "answer": "Individual characters in text are actually numbers that follow a convention such as ASCII or Unicode",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "Digital systems deal with discrete values (meaning there are only a fixed number of possible values).",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "Analog information is usually easier to interpret, store, transported, and processed than digital information.",
+                "correct": false,
+                "feedback": "Since analog can be more varied, and require more precise information storage, it is more difficult."
+            }
+        ]
+    }
+]

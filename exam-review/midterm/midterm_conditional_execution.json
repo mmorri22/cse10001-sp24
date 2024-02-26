@@ -1,0 +1,88 @@
+[
+	{
+		"question": "Determine the output of the following Python code:",
+		"code": "def prob_1(x):\n\tif x < 5:\n\t\tprint('Yes')\n\telif x % 2 == 1:\n\t\tprint('Maybe')\n\telse:\n\t\tprint('No')\n\nprob_1(5)",
+		"type": "multiple_choice",
+		"answers": [
+            {
+                "code": "No\n",
+                "correct": false,
+            },
+            {
+                "code": "Yes\n",
+                "correct": false,
+            },
+            {
+                "code": "Maybe\n",
+                "correct": true,
+            }
+        ]
+    },
+	{
+		"question": "Determine the output of the following Python code:",
+		"code": "def prob_1(x):\n\tif x < 5:\n\t\tprint('Yes')\n\telif x % 2 == 1:\n\t\tprint('Maybe')\n\telse:\n\t\tprint('No')\n\nprob_1(10)",
+		"type": "multiple_choice",
+		"answers": [
+            {
+                "code": "No\n",
+                "correct": true,
+            },
+            {
+                "code": "Yes\n",
+                "correct": false,
+            },
+            {
+                "code": "Maybe\n",
+                "correct": false,
+            }
+        ]
+    },
+	{
+		"question": "Determine the output of the following Python code:",
+		"code": "def prob_1(x):\n\tif x < 5:\n\t\tprint('Yes')\n\telif x % 2 == 1:\n\t\tprint('Maybe')\n\telse:\n\t\tprint('No')\n\nprob_1(3)",
+		"type": "multiple_choice",
+		"answers": [
+            {
+                "code": "No\n",
+                "correct": false,
+            },
+            {
+                "code": "Yes\n",
+                "correct": true,
+            },
+            {
+                "code": "Maybe\n",
+                "correct": false,
+            }
+        ]
+    },
+	{
+		"question": "Determine the output of the following Python code:",
+		"code": "def increment(x):\n\tx = x + 2\n\treturn x\n\t\ndef decrement(x):\n\treturn x - 2\n\nx = 1\nincrement(x)\nx = increment(x)\ndecrement(x)\nx = decrement(x)\nx = increment(decrement(x))\nx = decrement(increment(x))\n\nprint(x)",
+		"type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "4",
+                "correct": false,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "6",
+                "correct": false,
+            },
+            {
+                "answer": "5",
+                "correct": false,
+            },
+            {
+                "answer": "1",
+                "correct": true,
+            },
+            {
+                "answer": "3",
+                "correct": false,
+            }
+        ]
+    }
+]
+
