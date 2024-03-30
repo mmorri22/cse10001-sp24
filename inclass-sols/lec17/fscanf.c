@@ -9,9 +9,13 @@ int main(){
   /* Step 1 - Write fscanf to read in the values */
   fprintf( stdout, "Enter an integer, float, double, and a string: ");
 
+  // If statement ensure we do not ignore return value of ‘fscanf’, 
+  if( fscanf( stdin, "%d %f %lf", &first_int, &first_float, &first_double) ){
+    // Do nothing
+  }
 
   /* Step 2 - Write fprintf to print all the values */
-
+  fprintf( stdout, "%d %.2f %.2lf\n", first_int, first_float, first_double);
 
   return 0;
 }
