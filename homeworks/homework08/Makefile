@@ -6,14 +6,14 @@ CFLAGS := -std=c2x $(FLAGS)
 means.o : means.c
 	$(CC) $(CFLAGS) -c means.c
 
-homework03.o : homework03.c
-	$(CC) $(CFLAGS) -c homework03.c
+homework08.o : homework08.c
+	$(CC) $(CFLAGS) -c homework08.c
 
-homework03_objs := homework03.o means.o
+homework08_objs := homework08.o means.o
 
-homework03 : $(homework03_objs)
-	$(CC) $(CFLAGS) -o homework03 $(homework03_objs) -lm
+homework08 : $(homework08_objs)
+	$(CC) $(CFLAGS) -o homework08 $(homework08_objs) -lm
 
 
 clean:
-	rm -rf homework03 *.o *.swp
+	rm -rf homework08 *.o *.swp
