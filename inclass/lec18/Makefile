@@ -11,6 +11,31 @@ FLAGS := -O2 -g -Wall -Wextra -Wconversion -Wshadow -Werror
 CFLAGS := -std=c2x $(FLAGS)
 
 
+# Create the Trace Object
+ptr_trace.o: ptr_trace.c
+	$(CC) $(CFLAGS) -c ptr_trace.c
+
+# Trace Objects
+ptr_trace_objs := ptr_trace.o
+
+# Trace Executable and Run
+ptr_trace: $(ptr_trace_objs)
+	$(CC) $(CFLAGS) -o ptr_trace $(ptr_trace_objs)
+	./ptr_trace
+
+
+# Create the Trace Object Pass By Reference
+ptr_trace_pbr.o: ptr_trace_pbr.c
+	$(CC) $(CFLAGS) -c ptr_trace_pbr.c
+
+# Trace Objects
+ptr_trace_pbr_objs := ptr_trace_pbr.o
+
+# Trace Executable and Run
+ptr_trace_pbr: $(ptr_trace_pbr_objs)
+	$(CC) $(CFLAGS) -o ptr_trace_pbr $(ptr_trace_pbr_objs)
+	./ptr_trace_pbr
+
 
 # Create the maze Object
 maze.o: maze.c
