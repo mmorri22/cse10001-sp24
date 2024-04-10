@@ -7,6 +7,8 @@ int main(){
 
   int x = 10;
 
+    fprintf( stdout, "&x = %p\n", &x);
+
   ptr_recur_foo(&x);
 
   fprintf( stdout, "%d\n", x );
