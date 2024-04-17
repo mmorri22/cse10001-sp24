@@ -10,6 +10,32 @@ CC := gcc
 FLAGS := -O2 -g -Wall -Wextra -Wconversion -Wshadow -Werror
 CFLAGS := -std=c2x $(FLAGS)
 
+# Create the stat_dyn_addr Object
+stat_dyn_addr.o: stat_dyn_addr.c
+	$(CC) $(CFLAGS) -c stat_dyn_addr.c
+
+# stat_dyn_addr Objects list
+stat_dyn_addr_objs := stat_dyn_addr.o
+
+# stat_dyn_addr Executable
+stat_dyn_addr: $(stat_dyn_addr_objs)
+	$(CC) $(CFLAGS) -o stat_dyn_addr $(stat_dyn_addr_objs) -lm
+	valgrind --leak-check=full ./stat_dyn_addr
+
+
+# Create the stat_dyn_func Object
+stat_dyn_func.o: stat_dyn_func.c
+	$(CC) $(CFLAGS) -c stat_dyn_func.c
+
+# stat_dyn_func Objects list
+stat_dyn_func_objs := stat_dyn_func.o
+
+# stat_dyn_func Executable
+stat_dyn_func: $(stat_dyn_func_objs)
+	$(CC) $(CFLAGS) -o stat_dyn_func $(stat_dyn_func_objs) -lm
+	valgrind --leak-check=full ./stat_dyn_func
+
+
 # Create the Better Malloc Object
 better_malloc.o: better_malloc.c
 	$(CC) $(CFLAGS) -c better_malloc.c

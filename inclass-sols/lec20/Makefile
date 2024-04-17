@@ -10,6 +10,19 @@ CC := gcc
 FLAGS := -O2 -g -Wall -Wextra -Wconversion -Wshadow -Werror
 CFLAGS := -std=c2x $(FLAGS)
 
+# Create the Void Recast Address Object
+void_recast.o: void_recast.c
+	$(CC) $(CFLAGS) -c void_recast.c
+
+# Void Recasy Address Objects
+void_recast_objs := void_recast.o
+
+# Void Recast Address Executable
+void_recast: $(void_recast_objs)
+	$(CC) $(CFLAGS) -o void_recast $(void_recast_objs)
+	valgrind --leak-check=full ./void_recast
+
+
 
 # Create the Static Dynamic Address Object
 stat_dyn_addr.o: stat_dyn_addr.c

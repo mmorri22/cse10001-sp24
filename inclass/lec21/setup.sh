@@ -1,8 +1,10 @@
-wget https://raw.githubusercontent.com/mmorri22/cse20133/main/inclass/lec16/Makefile
-wget https://raw.githubusercontent.com/mmorri22/cse20133/main/inclass/lec16/better_malloc.c
-wget https://raw.githubusercontent.com/mmorri22/cse20133/main/inclass/lec16/better_malloc_li.c
-wget https://raw.githubusercontent.com/mmorri22/cse20133/main/inclass/lec16/better_malloc_float.c
-wget https://raw.githubusercontent.com/mmorri22/cse20133/main/inclass/lec16/better_malloc_double.c
-wget https://raw.githubusercontent.com/mmorri22/cse20133/main/inclass/lec16/argc_argv.c
-wget https://raw.githubusercontent.com/mmorri22/cse20133/main/inclass/lec16/argc_argv_mod.c
+wget https://raw.githubusercontent.com/mmorri22/cse10001-sp24/main/inclass/lec21/Makefile
+wget https://raw.githubusercontent.com/mmorri22/cse10001-sp24/main/inclass/lec21/better_malloc.c
+wget https://raw.githubusercontent.com/mmorri22/cse10001-sp24/main/inclass/lec21/better_malloc_li.c
+wget https://raw.githubusercontent.com/mmorri22/cse10001-sp24/main/inclass/lec21/better_malloc_float.c
+wget https://raw.githubusercontent.com/mmorri22/cse10001-sp24/main/inclass/lec21/better_malloc_double.c
+wget https://raw.githubusercontent.com/mmorri22/cse10001-sp24/main/inclass/lec21/argc_argv.c
+wget https://raw.githubusercontent.com/mmorri22/cse10001-sp24/main/inclass/lec21/argc_argv_mod.c
+wget https://raw.githubusercontent.com/mmorri22/cse10001-sp24/main/inclass/lec21/stat_dyn_addr.c
+wget https://raw.githubusercontent.com/mmorri22/cse10001-sp24/main/inclass/lec21/stat_dyn_func.c
 rm setup.sh
