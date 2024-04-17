@@ -20,7 +20,6 @@ stat_dyn_addr_objs := stat_dyn_addr.o
 # stat_dyn_addr Executable
 stat_dyn_addr: $(stat_dyn_addr_objs)
 	$(CC) $(CFLAGS) -o stat_dyn_addr $(stat_dyn_addr_objs) -lm
-	valgrind --leak-check=full ./stat_dyn_addr
 
 
 # Create the stat_dyn_func Object
@@ -35,6 +34,33 @@ stat_dyn_func: $(stat_dyn_func_objs)
 	$(CC) $(CFLAGS) -o stat_dyn_func $(stat_dyn_func_objs) -lm
 	valgrind --leak-check=full ./stat_dyn_func
 
+# Create the Dynamic Array Run Time Object
+dyn_array_time.o: dyn_array_time.c
+	$(CC) $(CFLAGS) -c dyn_array_time.c
+
+# Dynamic Array Run Time Objects
+dyn_array_time_eff_objs := dyn_array_time.o
+
+# Dynamic Array Run Time Executable
+dyn_array_time_eff: $(dyn_array_time_eff_objs)
+	$(CC) $(CFLAGS) -o dyn_array_time_eff $(dyn_array_time_eff_objs)
+	./dyn_array_time_eff
+
+
+# Inefficient Dynamic Array Compilation
+dyn_array_time:
+	gcc dyn_array_time.c -o dyn_array_time
+	./dyn_array_time
+
+# Simple Stat Array Compiler that is *not* optimized
+stat_array_time:
+	gcc stat_array_time.c -o stat_array_time
+	./stat_array_time
+
+# Simple Stat Array Compiler that is *not* optimized
+stat_reg_time:
+	gcc stat_reg_time.c -o stat_reg_time
+	./stat_reg_time
 
 # Create the Better Malloc Object
 better_malloc.o: better_malloc.c
@@ -113,7 +139,7 @@ argc_argv_mod: $(argc_argv_mod_objs)
 
 
 # Executable Names
-executable_names := better_malloc better_malloc_li better_malloc_float better_malloc_double argc_argv argc_argv_mod
+executable_names := dyn_array_time stat_array_time stat_reg_time better_malloc better_malloc_li better_malloc_float better_malloc_double argc_argv argc_argv_mod
 
 # Make all
 all: $(executable_names)
