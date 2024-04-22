@@ -21,7 +21,7 @@ int main()
 
 
    fprintf( stdout, "Enter number of elements in integer values (greater than 0): ") ;
-   fscanf( stdin, "%lu", &num_elements) ;
+   if( fscanf( stdin, "%lu", &num_elements) ){}
 
    /* Check for memory leak */
    if (num_elements == 0){
@@ -30,7 +30,7 @@ int main()
    }
 
    /* 1c - Call the memory allocation function in main */
-
+   int_dyn_arr = (int *)malloc( num_elements * sizeof(int) );
 
    /* Lets use the memory as an arrray */
    int_dyn_arr[0] = 1;
@@ -46,7 +46,7 @@ int main()
 
 
    /* 3c - Free the memory */
-
+   free(int_dyn_arr);
 
    return 0;
 }
