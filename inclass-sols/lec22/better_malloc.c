@@ -4,6 +4,11 @@
 /* function prototypes */
 
 /* Step 1a - Allocate the memory function declaration */
+void alloc_mem(int** int_dyn_arr, long unsigned int array_len){
+
+   *int_dyn_arr = (int *)malloc( array_len * sizeof(int) );
+
+}
 
 /* Step 2a - Print the memory function declaration */
 
@@ -30,7 +35,7 @@ int main()
    }
 
    /* 1c - Call the memory allocation function in main */
-   int_dyn_arr = (int *)malloc( num_elements * sizeof(int) );
+
 
    /* Lets use the memory as an arrray */
    int_dyn_arr[0] = 1;
