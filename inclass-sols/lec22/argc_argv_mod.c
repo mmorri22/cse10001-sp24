@@ -22,7 +22,7 @@ int main( int argc, char* argv[] ){
 	print_inputs( argc, argv );
 
 	// We will change this to 5, 25, 29, and 30
-	argc += 1;
+	argc += 29;
 
 	print_inputs( argc, argv );
 
