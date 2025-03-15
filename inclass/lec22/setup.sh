@@ -1,0 +1,10 @@
+wget https://raw.githubusercontent.com/mmorri22/cse10001-sp24/main/inclass/lec22/Makefile
+wget https://raw.githubusercontent.com/mmorri22/cse10001-sp24/main/inclass/lec22/maze_demo.c
+wget https://raw.githubusercontent.com/mmorri22/cse10001-sp24/main/inclass/lec22/maze.c
+wget https://raw.githubusercontent.com/mmorri22/cse10001-sp24/main/inclass/lec22/argc_argv.c
+wget https://raw.githubusercontent.com/mmorri22/cse10001-sp24/main/inclass/lec22/argc_argv_mod.c
+wget https://raw.githubusercontent.com/mmorri22/cse10001-sp24/main/inclass/lec22/better_malloc.c
+wget https://raw.githubusercontent.com/mmorri22/cse10001-sp24/main/inclass/lec22/better_malloc_li.c
+wget https://raw.githubusercontent.com/mmorri22/cse10001-sp24/main/inclass/lec22/better_malloc_float.c
+wget https://raw.githubusercontent.com/mmorri22/cse10001-sp24/main/inclass/lec22/better_malloc_double.c
+rm setup.sh
