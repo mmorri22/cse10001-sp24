@@ -1,8 +1,7 @@
 #include <stdio.h>
 
-int main(void){	// Do Something
+int main(void){
 	
-	fprintf( stdout, "Hello, World\n"  );
-
+	fprintf(stdout, "Hello, World\n");
 	return 0;
 }
