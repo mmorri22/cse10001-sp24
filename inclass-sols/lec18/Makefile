@@ -7,7 +7,7 @@
 CC := gcc
 
 # CFLAGS are the compiler flages for when we compile C code in this course
-FLAGS := -O2 -g -Wall -Wextra -Wconversion -Wshadow -Werror
+FLAGS := -O2 -g -Wall -Wextra -Wconversion -Werror
 CFLAGS := -std=c2x $(FLAGS)
 
 
