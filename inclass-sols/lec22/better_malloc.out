@@ -1,0 +1,106 @@
+cse20133-user@3e72f97809a0:~/cse10001-sp24/inclass-sols/lec22$ make better_malloc
+gcc -std=c2x -O2 -g -Wall -Wextra -Wconversion -Wshadow -Werror -lm -c better_malloc.c
+gcc -std=c2x -O2 -g -Wall -Wextra -Wconversion -Wshadow -Werror -lm -o better_malloc better_malloc.o -lm
+valgrind --leak-check=full ./better_malloc
+==53138== Memcheck, a memory error detector
+==53138== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==53138== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==53138== Command: ./better_malloc
+==53138== 
+Enter number of elements in integer values (greater than 0): 10
+==53138== Conditional jump or move depends on uninitialised value(s)
+==53138==    at 0x48CCA82: __vfprintf_internal (vfprintf-internal.c:1687)
+==53138==    by 0x4983342: __fprintf_chk (fprintf_chk.c:33)
+==53138==    by 0x10918B: fprintf (stdio2.h:100)
+==53138==    by 0x10918B: main (better_malloc.c:33)
+==53138== 
+==53138== Use of uninitialised value of size 8
+==53138==    at 0x48B063A: _itoa_word (_itoa.c:180)
+==53138==    by 0x48CC574: __vfprintf_internal (vfprintf-internal.c:1687)
+==53138==    by 0x4983342: __fprintf_chk (fprintf_chk.c:33)
+==53138==    by 0x10918B: fprintf (stdio2.h:100)
+==53138==    by 0x10918B: main (better_malloc.c:33)
+==53138== 
+==53138== Conditional jump or move depends on uninitialised value(s)
+==53138==    at 0x48B064C: _itoa_word (_itoa.c:180)
+==53138==    by 0x48CC574: __vfprintf_internal (vfprintf-internal.c:1687)
+==53138==    by 0x4983342: __fprintf_chk (fprintf_chk.c:33)
+==53138==    by 0x10918B: fprintf (stdio2.h:100)
+==53138==    by 0x10918B: main (better_malloc.c:33)
+==53138== 
+==53138== Conditional jump or move depends on uninitialised value(s)
+==53138==    at 0x48CD228: __vfprintf_internal (vfprintf-internal.c:1687)
+==53138==    by 0x4983342: __fprintf_chk (fprintf_chk.c:33)
+==53138==    by 0x10918B: fprintf (stdio2.h:100)
+==53138==    by 0x10918B: main (better_malloc.c:33)
+==53138== 
+==53138== Conditional jump or move depends on uninitialised value(s)
+==53138==    at 0x48CC6EE: __vfprintf_internal (vfprintf-internal.c:1687)
+==53138==    by 0x4983342: __fprintf_chk (fprintf_chk.c:33)
+==53138==    by 0x10918B: fprintf (stdio2.h:100)
+==53138==    by 0x10918B: main (better_malloc.c:33)
+==53138== 
+*int_dyn_arr = 0x1fff000418, int_dyn_arr = 0x109510, &num_elements = 0x1fff000420, num_elements = 10
+==53138== Conditional jump or move depends on uninitialised value(s)
+==53138==    at 0x48CCA82: __vfprintf_internal (vfprintf-internal.c:1687)
+==53138==    by 0x4983342: __fprintf_chk (fprintf_chk.c:33)
+==53138==    by 0x109395: fprintf (stdio2.h:100)
+==53138==    by 0x109395: alloc_mem (better_malloc.c:66)
+==53138==    by 0x109198: main (better_malloc.c:38)
+==53138== 
+==53138== Use of uninitialised value of size 8
+==53138==    at 0x48B063A: _itoa_word (_itoa.c:180)
+==53138==    by 0x48CC574: __vfprintf_internal (vfprintf-internal.c:1687)
+==53138==    by 0x4983342: __fprintf_chk (fprintf_chk.c:33)
+==53138==    by 0x109395: fprintf (stdio2.h:100)
+==53138==    by 0x109395: alloc_mem (better_malloc.c:66)
+==53138==    by 0x109198: main (better_malloc.c:38)
+==53138== 
+==53138== Conditional jump or move depends on uninitialised value(s)
+==53138==    at 0x48B064C: _itoa_word (_itoa.c:180)
+==53138==    by 0x48CC574: __vfprintf_internal (vfprintf-internal.c:1687)
+==53138==    by 0x4983342: __fprintf_chk (fprintf_chk.c:33)
+==53138==    by 0x109395: fprintf (stdio2.h:100)
+==53138==    by 0x109395: alloc_mem (better_malloc.c:66)
+==53138==    by 0x109198: main (better_malloc.c:38)
+==53138== 
+==53138== Conditional jump or move depends on uninitialised value(s)
+==53138==    at 0x48CD228: __vfprintf_internal (vfprintf-internal.c:1687)
+==53138==    by 0x4983342: __fprintf_chk (fprintf_chk.c:33)
+==53138==    by 0x109395: fprintf (stdio2.h:100)
+==53138==    by 0x109395: alloc_mem (better_malloc.c:66)
+==53138==    by 0x109198: main (better_malloc.c:38)
+==53138== 
+==53138== Conditional jump or move depends on uninitialised value(s)
+==53138==    at 0x48CC6EE: __vfprintf_internal (vfprintf-internal.c:1687)
+==53138==    by 0x4983342: __fprintf_chk (fprintf_chk.c:33)
+==53138==    by 0x109395: fprintf (stdio2.h:100)
+==53138==    by 0x109395: alloc_mem (better_malloc.c:66)
+==53138==    by 0x109198: main (better_malloc.c:38)
+==53138== 
+alloc_mem - 0x1fff0003c8 0x1fff000418 0x109510 0x1fff0003c0 10
+alloc_mem - 0x1fff0003c8 0x1fff000418 0x4a4a8c0 0x1fff0003c0 10
+*int_dyn_arr = 0x1fff000418, int_dyn_arr = 0x4a4a8c0, &num_elements = 0x1fff000420, num_elements = 10
+print_mem - 0x1fff0003e8 0x4a4a8c0 0x1fff0003e0 10
+int_dyn_arr[0] = 1 at 0x4a4a8c0
+int_dyn_arr[1] = 2 at 0x4a4a8c4
+int_dyn_arr[2] = 6 at 0x4a4a8c8
+int_dyn_arr[3] = 24 at 0x4a4a8cc
+int_dyn_arr[4] = 120 at 0x4a4a8d0
+int_dyn_arr[5] = 720 at 0x4a4a8d4
+int_dyn_arr[6] = 5040 at 0x4a4a8d8
+int_dyn_arr[7] = 40320 at 0x4a4a8dc
+int_dyn_arr[8] = 362880 at 0x4a4a8e0
+int_dyn_arr[9] = 3628800 at 0x4a4a8e4
+free_mem - 0x1fff0003f8 0x1fff000418 0x4a4a8c0
+free_mem - 0x1fff0003f8 0x1fff000418 0x4a4a8c0
+==53138== 
+==53138== HEAP SUMMARY:
+==53138==     in use at exit: 0 bytes in 0 blocks
+==53138==   total heap usage: 3 allocs, 3 frees, 2,088 bytes allocated
+==53138== 
+==53138== All heap blocks were freed -- no leaks are possible
+==53138== 
+==53138== Use --track-origins=yes to see where uninitialised values come from
+==53138== For lists of detected and suppressed errors, rerun with: -s
+==53138== ERROR SUMMARY: 30 errors from 10 contexts (suppressed: 0 from 0)
