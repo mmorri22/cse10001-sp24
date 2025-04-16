@@ -30,8 +30,8 @@ int main()
       exit(-1);
    }
 
-   fprintf(stdout, "*int_dyn_arr = %p, int_dyn_arr = %p, &num_elements = %p, num_elements = %lu\n",
-      &int_dyn_arr, int_dyn_arr, &num_elements, num_elements);
+   fprintf(stdout, "&int_dyn_arr = %p, int_dyn_arr = %p, *int_dyn_arr = %d, &num_elements = %p, num_elements = %lu, &iterator=%p &factorial = %p\n",
+      &int_dyn_arr, int_dyn_arr, *int_dyn_arr, &num_elements, num_elements, &iterator, &factorial);
 
 
    /* 1c - Call the memory allocation function in main */
