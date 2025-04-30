@@ -1,0 +1,2 @@
+Size of optimal first_struct = 43
+Size of first_struct = 48
